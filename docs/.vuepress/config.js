@@ -1,7 +1,6 @@
 module.exports = {
   title: 'wl的博客',
   description: '欢迎访问我的前端日志',
-  lastUpdated: 'Last Updated',
   // editLinks: true,
   // editLinkText: "本文源码地址",
   head: [
@@ -9,6 +8,7 @@ module.exports = {
   ],
   themeConfig: {
     repo: 'wanglei041533/wlblog',
+    lastUpdated: '更新时间',
     nav: [
       { text: '学习心得', link: '/blog/' },
       { text: '面试总结', link: '/interview/' },
