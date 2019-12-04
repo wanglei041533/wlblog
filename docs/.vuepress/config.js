@@ -23,13 +23,13 @@ module.exports = {
             'linux'
           ]
         },
-        {
-          title: 'js基础',
-          collapsable: false,
-          children: [
-            // 'js1'
-          ]
-        }
+        // {
+        //   title: 'js基础',
+        //   collapsable: false,
+        //   children: [
+        //     // 'js1'
+        //   ]
+        // }
       ],
       '/interview/': [
         {
