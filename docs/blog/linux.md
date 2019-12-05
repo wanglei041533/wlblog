@@ -38,6 +38,9 @@ Linux是一套免费使用和自由传播的类Unix操作系统，是一个基�
 - pwd 当前位置路径
 - cd / 切换到亘目录
 - cd ～ 切换到用户的home目录（root用户为/root，其他用户为/home/用户名）
+- cp 源文件位置 目标位置  复制文件
+- mv 源文件位置 目标位置  移动文件
+- rm -rf 文件或目录  删除文件
 - netstat 查询端口占用情况
 - netstat -an 查询端口占用情况（不解析ip）
 - netstat -an | grep 80 筛选占用80端口的进程
