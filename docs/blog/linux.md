@@ -36,7 +36,7 @@ Linux是一套免费使用和自由传播的类Unix操作系统，是一个基�
 - ls 显示当前目录文件
 - ls -a 显示当前目录所有文件（包括隐藏文件夹，以.开头的文件夹会隐藏）
 - pwd 当前位置路径
-- cd / 切换到亘目录
+- cd / 切换到根目录
 - cd ～ 切换到用户的home目录（root用户为/root，其他用户为/home/用户名）
 - cp 源文件位置 目标位置  复制文件
 - mv 源文件位置 目标位置  移动文件
@@ -45,9 +45,24 @@ Linux是一套免费使用和自由传播的类Unix操作系统，是一个基�
 - netstat -an 查询端口占用情况（不解析ip）
 - netstat -an | grep 80 筛选占用80端口的进程
 - systermctl start 服务名 启动服务
+- systermctl restart 服务名 重启服务
 - systermctl stop 服务名 停止服务
 - systermctl status 服务名 查看服务运行状态
 - kill pid 暴力杀死进程（有风险）
+- vi/vim 行编辑器
+- q 突出 q！强制推出 wq 保存退出
+- curl 下载地址
+- wget 下载地址  如果没有wget命令，可以 yum install wget 安装
+- wget -c 下载地址   断点续传，从上次停止的地方继续下载
+- ctrl+c 结束正在运行的程序，
+- ctrl+d 结束输入或退出shell
+- ctrl+s 暂停屏幕输出
+- ctrl+q 恢复屏幕输出
+- ctrl+l 清屏，等同于clear
+- ctrl+a/ctrl+e 快速移动光标到行首/行尾
+- ps 查看进程
+- top 查看进程，动态，5秒更新
+- w/who 查看谁练到当前系统
 
 ## 端口
 - http为80端口
@@ -55,4 +70,13 @@ Linux是一套免费使用和自由传播的类Unix操作系统，是一个基�
 - mysql为3306端口
 - 127.0.0.1只有本机可以访问
 - 0.0.0.0 所有机器可访问
+- ssh默认端口号22
+- 端口范围 1 - 65535
+
+## Linux安全
+- last 检查登陆日志，只能看到登陆成功的日志
+- lastb 查看所有登陆日志
+ssh默认端口号为22，可以修改配置，配置文件在/etc/ssh，修改端口的文件是sshd_config 
+
+配置网卡的配置文件：/etc/sysconfig/network-scripts下的ififcfg-eth（可能是其他名字）
 
