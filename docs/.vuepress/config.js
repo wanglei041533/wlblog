@@ -6,6 +6,9 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }]
   ],
+  markdown: { //markdown
+    lineNumbers: true //显示行号
+  },
   themeConfig: {
     repo: 'wanglei041533/wlblog',
     lastUpdated: '更新时间',
@@ -23,13 +26,14 @@ module.exports = {
             'linux'
           ]
         },
-        // {
-        //   title: 'js基础',
-        //   collapsable: false,
-        //   children: [
-        //     // 'js1'
-        //   ]
-        // }
+        {
+          title: 'TypeScript',
+          collapsable: false,
+          children: [
+            'ts-introduce-env',
+            'ts-data-types'
+          ]
+        }
       ],
       '/interview/': [
         {
